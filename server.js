@@ -1,8 +1,9 @@
 const express = require("express");
-const { ApolloServer, gql } = require("apollo-server-express");
+const { ApolloServer, makeExecutableSchema } = require("apollo-server-express");
+const {applyMiddleware} = require("graphql-middleware")
 const expressJwt = require("express-jwt");
 
-
+// const permissions = require("./permissions")
 const resolvers = require("./resolvers");
 const typeDefs = require("./typeDefs");
 
@@ -17,9 +18,13 @@ app.use(
         credentialsRequired:false
 })
 )
+
 const server = new ApolloServer({
-    typeDefs,
-    resolvers,
+    schema:applyMiddleware(
+        makeExecutableSchema({typeDefs,resolvers})
+        // permissions
+    ),
+    
     context: ({req}) => {
             const user = req.user || null;
                 return {user};

@@ -6,27 +6,27 @@ const users= [
         email:"mohankumar@mohan.com",
         password:"imgood",
         roles:["fullstackeng"],
-        permission:["read:any_user, read:own_user"]
+        permissions:["read:any_user"]
 
     },
     {
         
-        id:"123",
-        name:"mohan",
-        email:"mohankumar@mohan.com",
-        password:"imgood",
+        id:"124",
+        name:"somu",
+        email:"somu@mohan.com",
+        password:"imsomu",
         roles:["fullstackeng"],
-        permission:["read:any_user, read:own_user"]
+        permissions:["read:any_user"]
 
     },
     {
         
-        id:"123",
-        name:"mohan",
-        email:"mohankumar@mohan.com",
-        password:"imgood",
+        id:"125",
+        name:"vk",
+        email:"vk@mohan.com",
+        password:"imbad",
         roles:["fullstackeng"],
-        permission:["read:any_user, read:own_user"]
+        permissions:["read:own_user"]
 
     }
 ];

@@ -5,10 +5,13 @@ module.exports= gql`
     type User {
         id : ID
         name: String
+        
+       
     }
 
     type Query{
-        createdUser(id : ID) : User
+    
+        user(id: ID!): User      
         viewers:User!
     }
     type Mutation{
