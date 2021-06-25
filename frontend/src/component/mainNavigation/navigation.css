@@ -1,0 +1,12 @@
+.nav_header{
+    background-color: blueviolet;
+    display: flex;
+}
+.elements{
+    margin-top: 10px;
+    display: flex;
+}
+.elements a:hover,
+.elements a:active{
+    color:yellow
+}

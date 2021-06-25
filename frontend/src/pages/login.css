@@ -1,0 +1,30 @@
+.master_login{
+    margin: 50px 280px;
+}
+.name{
+    margin-left: 170px;
+    
+}
+
+
+.form_control{
+    display: flex;
+    margin: 20px 40px ;
+    width: 50%;
+    padding: left;
+    
+}
+.button{
+    margin: 20px 40px ;
+    padding: 10px 20px;
+  
+}
+label{
+    padding: 10px 20px;
+}
+.signup, .submit{
+    margin: 5px;
+    border-radius: 5px;
+    color: turquoise;
+    background-color: violet;
+}
